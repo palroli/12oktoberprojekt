@@ -1,0 +1,31 @@
+1. lépés adatbázis létrehozása:
+CREATE DATABASE konyvtar_projekt
+CHARACTER SET utf8
+COLLATE utf8_hungarian_ci;
+
+2.lépés tábla létrehozása:
+CREATE TABLE konyvek (
+id INT PRIMARY KEY,
+cim VARCHAR(100) NOT NULL,
+szerzo VARCHAR(100) NOT NULL,
+kiadas_eve INT,
+oldalszam INT,
+ar INT);
+
+3.lépés adatok feltöltése:
+INSERT INTO konyvek (id, cim, szerzo, kiadas_eve, oldalszam, ar) VALUES
+(1, 'Egri csillagok', 'Gardonyi Geza', 1899, 560, 3500),
+(2, 'A pal utcai fiuk', 'Molnar Ferenc', 1906, 220, 2800),
+(3, 'Tuskevar', 'Fekete Istvan', 1957, 340, 3200),
+(4, 'A gyuruk ura', 'J.R.R. Tolkien', 1954, 1200, 6500),
+(5, '1984', 'George Orwell', 1949, 328, 4100),
+(6, 'A kis herceg', 'Antoine de Saint-Exupery', 1943, 96, 2500),
+(7, 'Abigel', 'Szabo Magda', 1970, 380, 3600),
+(8, 'Harry Potter es a bolcsek kove', 'J.K. Rowling', 1997, 352, 4500),
+(9, 'A mester es Margarita', 'Mihail Bulgakov', 1967, 480, 4200),
+(10, 'Szep uj vilag', 'Aldous Huxley', 1932, 288, 3800),
+(11, 'Bun es bunhodes', 'Fjodor Dosztojevszkij', 1866, 670, 4900),
+(12, 'A nagy Gatsby', 'F. Scott Fitzgerald', 1925, 208, 2900),
+(13, 'Fahrenheit 451', 'Ray Bradbury', 1953, 256, 3300),
+(14, 'Dune', 'Frank Herbert', 1965, 688, 5200),
+(15, 'Alapitvany', 'Isaac Asimov', 1951, 255, 3400);
